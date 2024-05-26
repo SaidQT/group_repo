@@ -105,7 +105,6 @@ class BusinessDetail(models.Model):
     updated_at=models.DateTimeField(auto_now=True)
     objects=BusinessManager()
 
-    
 class Review(models.Model):
     user=models.ForeignKey(User,related_name="reviews", on_delete=models.CASCADE)
     detail=models.ForeignKey(BusinessDetail,related_name="reviews", on_delete=models.CASCADE)
