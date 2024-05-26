@@ -21,20 +21,17 @@ header {
      display: flex;
      box-shadow: 4px 4px 8px #ff7e14cb;
      align-items: center;
-     background-color: #f8f8f1;
+     background: linear-gradient(to top, white, #de703c);
      overflow: hidden;
      position: relative;
-
+     align-items: center;
      justify-content: space-around;
 }
 
 header div a {
-     color: rgb(232, 231, 231);
-     background-color:#ff7e14cb ;
+     color: black;
      font-size: medium;
      border-radius: 8px;
-     border: 1px solid black;
-     box-shadow: 4px 4px 4px white;
      padding: 5px 10px;
      transition: 0.2s;
 }
@@ -44,6 +41,7 @@ header nav a {
      margin-right: 5px;
      padding: 5px 10px;
      transition: 0.2s;
+     font-size: medium;
 }
 
 
@@ -106,7 +104,7 @@ header div a:hover {
 }
 
 .slider .list .item .type {
-     color: #ff7e14cb;
+     color: lightsalmon;
 }
 
 .slider .list .item .button {
@@ -119,12 +117,14 @@ header div a:hover {
 
 .slider .list .item .button button {
      border: none;
-     background-color: #eee;
+     background-color: lightsalmon;
+     border-radius: 20px;
      font-family: Poppins;
      font-weight: 500;
      cursor: pointer;
      transition: 0.4s;
      letter-spacing: 2px;
+     color: white;
 }
 
 
@@ -182,7 +182,7 @@ header div a:hover {
      width: 40px;
      height: 40px;
      border-radius: 50%;
-     background-color: black;
+     background-color: lightsalmon;
      border: none;
      color: #fff;
      font-family: monospace;
