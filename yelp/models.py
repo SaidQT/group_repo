@@ -92,7 +92,7 @@ class Location (models.Model):
     
 class BusinessDetail(models.Model):
     name=models.CharField(max_length=45)
-    description=models.TextField()
+    description=models.TextField(null=True)
     business_hours=models.CharField(max_length=45, default="")
     image_url=models.CharField(max_length=255,null=True)
     phone=models.IntegerField()
