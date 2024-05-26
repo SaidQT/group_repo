@@ -7,4 +7,5 @@ urlpatterns = [
     path('process2', views.login),
     path('login', views.log),
     path('category/<int:id>', views.show),
+    path('delete', views.reset),
 ]

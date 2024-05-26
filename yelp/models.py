@@ -82,7 +82,7 @@ class BusinessCategory(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
     objects=CategoryManager()
-  
+    
 class Location (models.Model):
     city=models.CharField(max_length=45)
     neighborhood=models.CharField(max_length=45)
