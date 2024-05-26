@@ -6,5 +6,5 @@ urlpatterns = [
     path('process', views.create),
     path('process2', views.login),
     path('login', views.log),
-    path('category/<int:id>', views.show)
+    path('category/<int:id>', views.show),
 ]
