@@ -44,9 +44,16 @@ def log(request):
     return render(request,'login.html')
 
 def show(request,id):
-    category=BusinessCategory.objects.get(id=id)
+    category_x=BusinessCategory.objects.get(id=id)
     data={
-        "business":BusinessDetail.objects.get(category=category)
+        "business":BusinessDetail.objects.filter(category=category_x)
     }
-    return render(request,'category.html',data)
+    if category_x.id == 2 :
+        return render(request,'category.html',data)
+    else:
+        return render(request,"others.html")
+
+def reset(request):
+    request.session.clear()
+    return redirect("/")
 
