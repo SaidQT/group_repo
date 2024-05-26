@@ -82,13 +82,14 @@ class BusinessCategory(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
     objects=CategoryManager()
-    
+  
 class Location (models.Model):
     city=models.CharField(max_length=45)
     neighborhood=models.CharField(max_length=45)
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
     objects=LocationManager()
+
     
 class BusinessDetail(models.Model):
     name=models.CharField(max_length=45)
@@ -103,6 +104,7 @@ class BusinessDetail(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
     objects=BusinessManager()
+
     
 class Review(models.Model):
     user=models.ForeignKey(User,related_name="reviews", on_delete=models.CASCADE)
